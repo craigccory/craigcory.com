@@ -2,7 +2,7 @@
 window.onload = function() {
   var textElement = document.getElementById("footer-text");
   if (textElement) {
-    textElement.innerText = "\u00A9 1990, 2026 craigcory";
+    textElement.innerText = "\u00A9 1958, 2026 craigcory.com";
   }
 };
 

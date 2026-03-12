@@ -1,0 +1,143 @@
+/* universal.css file for standard settings on ALL pages
+   Override with an additional css file */
+body {
+        font-family: Garamond, Georgia, serif; 
+		font-size: 15px;
+		color: #ffffff;
+        background-color: #000000;
+    }
+	
+.footer {				/* use with a <div class=footer> */
+	position: fixed;	/* Fixes the position relative to the browser window */
+	left: 0;			/* Aligns to the left edge */
+	bottom: 0;			/* Aligns to the bottom edge */
+	width: 100%;		/* Spans the full width of the page */
+	background-color: #000000;	/*white: example background color */
+	color: #ffff00;		/* gold: eample text color */
+	font-size: 20px;
+	text-align: center;	/* Centers the text */
+	padding: 10px 0;	/* Adds some vertical padding */
+	}
+	
+footer {				/* Basic styling for the footer */
+	background-color: #000000;
+	color: #ffff00;
+	font-size: 20px;
+	text-align: center;
+	padding: 10px 0;
+	width: 100%;
+	}
+	
+h1 {
+	font-size: 40px;
+	margin: 0px;
+}
+h2 {
+	font-size: 30px;
+	margin: 0px;
+}
+h3 {
+	font-size: 20px;
+	margin: 0px;
+}
+h4 {
+	font-size: 15px;
+	margin: 0px;
+}
+h5 {
+	font-size: 10px;
+	margin: 0px;
+}
+h6 {
+	font-size: 5px;
+	margin: 0px;
+}
+
+hr {
+		color: #ffffff;
+		width: 80%;
+	}
+
+	/* unvisited link */
+a:link {
+	color: #ffffff;
+	font-size: 15px;
+	}
+
+	/* visited link */
+a:visited {
+	color: #ffffff;
+	font-size: 15px;
+	}
+
+	/* mouse over link */
+a:hover {
+	color: red;
+	font-size: 15px;
+	}
+	/* mouse selecting link */
+a:active {
+	color: #ffffff;
+	font-size: 15px;
+	}
+
+/* ===========================================================================
+   Main Navigation "Return" Button css
+   classes: nav-menu, nav-btn, nav-content
+*/
+
+.nav-menu {
+    position: relative;	/*Needed for absolute positioning of the dropdown content */
+    display: inline-block;
+}
+
+/* Button properties at rest */
+.nav-btn {
+    background-color: #000000; /*  */
+    color: #ffffff;
+	width: 100px;
+    padding: 5px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Button color when hovered over */
+.nav-menu:hover .navbtn {
+    background-color: oklch(0.71 0.138 256); /* light blue */
+}
+
+.nav-content {
+    display: none;	/* Hide the dropdown content by default */
+    position: top;
+    min-width: 100px;
+	text-align: center;
+ /*    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+    z-index: 1;		/* Ensures the menu appears on top of other content */
+}
+
+
+.nav-content a {   /* a  */
+	font-size: 20px;
+    padding: 10px 5px;	/*space around list item text */
+    text-decoration: none;
+    display: block;	/* Makes the links span the full width */
+}
+
+/* Show the dropdown menu on hover */
+.nav-menu:hover .nav-content {
+    display: block;
+}
+
+/* Color of dropped list item's background */
+.nav-content {
+    background-color: oklch(0.368 0.01 13.643); /* dark gray */
+}
+/* Use with:
+	  <div class="nav-menu">
+        <button class="nav-btn">Pages</button>
+        <div class="nav-content">
+		  <a href="../archives/archives.html" style="font-size: 20px">Archives</a>
+	      <a href="../index.Current.html" style="font-size: 20px">Home</a>
+	    </div>
+      </div>
